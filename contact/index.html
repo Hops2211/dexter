@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" id="login-page">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
+    <link rel="stylesheet" media="screen" href="../css/screen.css" />
+    <title>Dexter Church of Christ</title>
+  </head>
+  <body>
+    <header class="h-card" id="login-header">
+    </header>
+    
+    <nav id="navigation">
+      <ul class="navigation">
+        <li><a href="../">Home</a></li>
+        <li id="visit"><a href="../visit">Visit</a></li>
+        <ul id="visitlinks">
+            <li id="expectations" ><a href="../expectations">What To Expect</a></li>
+            <li id="beliefs"><a href="../beliefs">Our Beliefs</a></li>
+            <li id="staff"><a href="../staff">Preaching Staff</a></li>
+        </ul>
+        <li><a href="../learn">Learn More</a></li>
+        <li><a href="../contact">Contact Us</a></li>
+        <li><a href="../events">Events</a></li>
+        <li><a href="../sermons">Sermons</a></li>
+      </ul>
+    </nav>     
+    
+  <input type="checkbox" id="menuToggle">
+  <label for="menuToggle" id="menu-icon" class="menu-icon"></label>
+  
+    
+    <main>
+      <section id="contactpage">
+           
+        
+        <h2>Contact Us</h2>
+        
+        <div id="map"></div>
+        <script>
+          function initMap() {
+        var uluru = {lat: 42.2907709304236, lng: -83.9017171517972};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 13,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+     }
+     </script>
+     
+        <section id="contact"> 
+        
+          <form method="POST" id="contactform">
+            <ol>
+              <li id="subjectline">
+                <input type="hidden" name="_subject" value="Website contact" />
+              </li>
+              <li id="gotchaline">
+                <input type="text" name="_gotcha" style="display:none" />
+              </li>
+              <li id="fname-input">
+                <label for="fname">Name</label>
+                <input type="text" name="name" id="name" placeholder="Jane Doe"/>
+              </li>
+              <li id="email-input">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="you@example.com" pattern="^.+@.+$" />
+              </li>
+              <li id="phone-input">
+                <label for="phone">Phone Number</label>
+                <input type="tel" name="phone" id="phone" placeholder="734-777-8888"/>
+              </li>
+              <li id="message-input">
+                <label for="message">Message</label>
+                <input type="text" name="message" id="message"/>
+              </li>
+              <li>
+                <input type="submit" name="submit" id="submit" value="Submit" />
+              </li>
+            </ol>
+          </form>
+
+          </section>
+      </section>
+
+    </main>
+    
+      <footer id="foot">8700 Jackson Road Dexter, Michigan 48130 Copyright 2018 © Dexter Church of Christ | Sunday Class: 9:30 AM, 5:00 PM | Sunday Worship: 10:30 AM | Wednesday Class: 11:00 AM, 7:00 PM
+   <figure id="facebook-icon" class="icon">
+      <a href="https://www.facebook.com/dexterchurchofchrist/">
+        <img src="/img/fb-icon.ico" alt="facebook" /> 
+      </a>
+    </figure>
+    
+     <figure id="twitter-icon" class="icon">
+      <a href="https://twitter.com/dextercoc">
+        <img src="/img/twitter-icon.ico" alt="twitter" /> 
+      </a>
+    </figure>
+    
+  </footer>  
+    
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNOXp8tV5ePZttb8C0EzPo3OI2cVIf-lc&callback=initMap">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="../js/site.js"></script>
+  </body>
+</html>
