@@ -7,9 +7,12 @@
     <title>Dexter Church of Christ</title>
   </head>
   <body>
-    <header class="h-card" id="login-header">
-    </header>
     
+    <header class="h-card" id="login-header">
+      <input type="checkbox" id="menuToggle">
+      <label for="menuToggle" id="menu-icon" class="menu-icon"></label>
+    </header>
+
     <nav id="navigation">
       <ul class="navigation">
         <li><a href="../">Home</a></li>
@@ -24,29 +27,24 @@
         <li><a href="../events/index.html">Events</a></li>
         <li><a href="../sermons/index.html">Sermons</a></li>
       </ul>
-    </nav>     
-    
-  <input type="checkbox" id="menuToggle">
-  <label for="menuToggle" id="menu-icon" class="menu-icon"></label>
-  
-    
+    </nav>
+
     <main>
       <section id="mainpage">
         <h1> Dexter Church Of Christ</h1>
         <figure id="mainimage">
             <img src="/img/dexter.jpg" alt="Dexter Church of Christ" />
         </figure>
-        
+
         <h2> Welcome </h2>
-        <p id="info"> The Dexter Church of Christ is a family of believers that love God and one another. We are Christians seeking to honor God as we 
-        worship and praise Him and serve Him in our daily lives. We strive to make a difference in the lives of our members, their families and friends, 
-        in our community and throughout the world. We are a Church of Christ that meets in Dexter, MI.  We are honored to have you as our guest.  
+        <p id="info"> The Dexter Church of Christ is a family of believers that love God and one another. We are Christians seeking to honor God as we
+        worship and praise Him and serve Him in our daily lives. We strive to make a difference in the lives of our members, their families and friends,
+        in our community and throughout the world. We are a Church of Christ that meets in Dexter, MI.  We are honored to have you as our guest.
         Please click on the menus above to get directions and learn more about us.  If you have any questions or comments, please contact us. </p>
-        
+
 
         <h2> Worship Schedule </h2>
-        <meta name="google-signin-client_id" content="695277159525-sqol2oslk5j6e63rhpkoniq80a3jhu51.apps.googleusercontent.com">
-        <div class="g-signin2" data-onsuccess="onSignIn"></div>
+
         <ol id="schedule">
           <li> Sunday </li>
             <ul id="times">
@@ -55,31 +53,42 @@
               <li id="times"> Evening Worship - 6:00 pm </li>
             </ul>
           <li> Wednesday </li>
-            <ul id="times"> 
+            <ul id="times">
               <li id="times"> Bible Study - 7:00 pm </li>
             </ul>
         </ol>
-        
-          
+
+
       </section>
 
     </main>
-    
+
       <footer id="foot">8700 Jackson Road Dexter, Michigan 48130 Copyright 2018 © Dexter Church of Christ | Sunday Class: 9:30 AM, 5:00 PM | Sunday Worship: 10:30 AM | Wednesday Class: 11:00 AM, 7:00 PM
    <figure id="facebook-icon" class="icon">
       <a href="https://www.facebook.com/dexterchurchofchrist/">
-        <img src="/img/fb-icon.ico" alt="facebook" /> 
+        <img src="/img/fb-icon.ico" alt="facebook" />
       </a>
     </figure>
-    
+
      <figure id="twitter-icon" class="icon">
       <a href="https://twitter.com/dextercoc">
-        <img src="/img/twitter-icon.ico" alt="twitter" /> 
+        <img src="/img/twitter-icon.ico" alt="twitter" />
       </a>
     </figure>
-    
-  </footer>  
 
+  </footer>
+
+  <script>
+  function onSignIn(googleUser) {
+  var profile = googleUser.getBasicProfile();
+  console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+  console.log('Name: ' + profile.getName());
+  console.log('Image URL: ' + profile.getImageUrl());
+  console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+  }
+</script>
+
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="js/site.js"></script>

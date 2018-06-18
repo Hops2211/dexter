@@ -5,27 +5,11 @@ jQuery(function($) {
 
   $('html').removeClass('nojs');
   $('html').addClass('hasjs');
-  
-  console.log("hi");
-  
 
+  console.log("hi");
 
 //---------pull out menu for navigation---------------------------
- /*   $('#menuToggle').on('click', function(e) {
-    // Don't follow the #tools-jump link:
-    e.preventDefault();
-    // prevent event bubbling; without this
-    // line, inner click event, on #content,
-    // will fire immediately:
-    e.stopPropagation();
 
-    $('html').toggleClass('has-toolbar');
-    $('#menuToggle').on('click', function(e) {
-      $('html').toggleClass('has-toolbar');
-  //    $('html').toggleClass('no-toolbar');
-    });
-    });
- */   
     $('#visit').on('click', function(e) {
     // Don't follow the #tools-jump link:
     e.preventDefault();
@@ -34,9 +18,8 @@ jQuery(function($) {
     // will fire immediately:
     e.stopPropagation();
     $('html').toggleClass('visit');
-    console.log('clicked!');
     });
-    
+
     $('#expectations').on('click', function(e) {
     // Don't follow the #tools-jump link:
     e.preventDefault();
@@ -47,7 +30,7 @@ jQuery(function($) {
 
     window.location.replace('../expectations');
     });
-    
+
     $('#beliefs').on('click', function(e) {
     // Don't follow the #tools-jump link:
     e.preventDefault();
@@ -58,7 +41,7 @@ jQuery(function($) {
 
     window.location.replace('../beliefs');
     });
-    
+
     $('#staff').on('click', function(e) {
     // Don't follow the #tools-jump link:
     e.preventDefault();
@@ -69,23 +52,23 @@ jQuery(function($) {
 
     window.location.replace('../staff');
     });
-    
+
     $("#menuToggle").click(function(){
         $("#navigation").slideToggle("slow");
-        
+
      $('html').toggleClass('has-toolbar');
-     
+
 
      $('#page').on('click', function(e) {
       $('html').removeClass('has-toolbar');
     });
 
     });
-    
-    
 
-    
-    
+
+
+
+
  //------end of navigation menu-------------------------------------
 
 
@@ -95,9 +78,9 @@ jQuery(function($) {
     var email = $('#email').val();
     console.log('pshed');
     $('#contact').append('Thank you '+name+'. A confirmation email will be sent to you shortly');
- 
+
  });
- 
+
 
 
   function initMap() {
@@ -110,6 +93,8 @@ jQuery(function($) {
           position: uluru,
           map: map
         });
+
      }
-        
-}); 
+
+
+});

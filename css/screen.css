@@ -8,7 +8,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* stylelint-enable */
 
 /* base styles */
- 
+
 /* minor third scale */
 
 /* http://www.modularscale.com/?17&px&1.125 */
@@ -191,10 +191,13 @@ html {
   font-family: Verdana, Arial, Helvetica, sans-serif;
 
 }
-
+ body{
+   background-color:#000080;
+ }
 main{
   background-image: url("../img/blue.jpg");
 }
+
 img,
 video{
   display: block;
@@ -203,16 +206,16 @@ video{
 }
 
 h1{
-  font-size: 2.887em;
-  line-height: 1.27em;
+  font-size: 1.602em;
+  line-height: 1.20em;
   text-align: center;
   padding-bottom: 0.75em;
   padding-top: 0.75em;
- 
+
 }
 
 h2{
-  font-size: 2.281em;
+  font-size: 1.266em;
   line-height: 1.2em;
   text-align: center;
   padding: 0.5em 0 0.5em 0;
@@ -236,31 +239,45 @@ p{
  }
 
 /* ------------------------------------------------------ navigation styles ------------------------------------------- */
+header{
+  background-color: #000080;
+  width: 100%;
+  display: inline-block;
+
+
+}
+
+#menuToggle{
+  right: 0;
+  position: absolute;
+  float: right;
+  display: none;
+}
+
+
 .menu-icon {
-  top: 20px;
-	padding: 12px 20px;
+	padding: 10px 20px;
 	cursor: pointer;
 	float: right;
-	margin: 0.5px 0.5px 0.5px 0; 
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6'/><rect y='24' width='30' height='6'/><rect y='12' width='30' height='6'/></svg>");
   background-size: contain;
 
 }
 
-nav a:hover { 
-  background: #0000ff	; 
-  color: #c0c0c0; 
+nav a:hover {
+  background: #0000ff	;
+  color: #c0c0c0;
 }
 
 #navigation {
-  color: #000; 
+  color: #000;
 	background: #000080;
   position: absolute;
   height: 100%;
  /* width: 50%; */
  /* margin-left: -50%; */
  display: none;
-  
+
 }
 
 
@@ -269,7 +286,7 @@ nav a:hover {
   display: inline-block;
   padding: 0;
   border-bottom: 0.02em solid #fff;
-  width:100%; 
+  width:100%;
 }
 
 
@@ -278,7 +295,7 @@ nav a:hover {
   text-decoration: none;
   padding: 1.29em;
   color: #fff;
-  text-align: center;  
+  text-align: center;
   font-family: Lucida Bright;
   font-weight: bold;
 
@@ -287,23 +304,17 @@ nav a:hover {
 .has-toolbar #foot{
   visibility: hidden;
 }
- 
- 
+
+
 ul {
     padding: 0;
     margin: 0;
 }
 
-/*
-ul li {
-    display: inline;
-    position: relative;
-}
-*/
 #visitlinks {
     position: absolute;
     display: none;
-    color: #000; 
+    color: #000;
     background: #000080;
     left: 0;
     top: 100%;
@@ -319,16 +330,12 @@ ul li {
 
 /* --------------------------------------------------------- end nav styles ------------------------------------------------------- */
 
-#mainimage{
-  width: 75%;
-  margin-left: 16%;
-}
-
+#mainimage,
 #beliefsimage{
   width: 75%;
-  margin-left: 25%;
-  padding-top: 0.75em;
+  margin-left: 13%;
 }
+
 
 #mainpage,
 #expectationspage,
@@ -341,36 +348,41 @@ ul li {
   margin-left: 15%;
 }
 
-#info,
-#schedule,
-#expectationspage
-#beliefspage,
-#contact{
-  margin-left: 12.5%;
+#info{
+  margin-left: 6.5%;
   width: 75%;
   text-align: center;
 }
 
+#schedule{
+  margin-left: 11.5%;
+  width: 75%;
+  font-size: 1em;
+  text-align: center;
+  padding-bottom: 0.75em;
+}
+
 ol li{
-  font-size: 1.602em;
+  font-size: 1.266em;
   line-height: 1.2em;
 }
 
+
 #times{
-  font-size: 1.063em; 
+  font-size: 1.063em;
 }
 
 .responsiveCal {
- 
+
 position: relative; padding-bottom: 75%; height: 0; overflow: hidden;
- 
+
 }
- 
+
 .responsiveCal iframe {
 
-margin-left: 12%; 
+margin-left: 12%;
 position: absolute; top:0; left: 0; width: 75%; height: 100%;
- 
+
 }
 
 /* ----------------------------------------------- footer styles -------------------------------------------------- */
@@ -380,22 +392,22 @@ position: absolute; top:0; left: 0; width: 75%; height: 100%;
   left: 0;
 }
 
-#facebook-icon img 
+#facebook-icon img
 {
   position: absolute;
-  
+
 }
 
 #twitter-icon img
 {
   position: absolute;
   margin-left: 3.5em;
-  
+
 }
 
 footer{
   background-color: #000080	;
-  display: block;
+  display: inline-block;
 }
 
 /* --------------------------------------------------- end footer styles ---------------------------------------- */
@@ -404,23 +416,23 @@ footer{
 /* forms */
 #contactform{
   width: 50%;
-    margin-left: 27%;
+  margin-left: 27%;
 }
 
 label,
-input, 
+input,
 select,
 textarea {
 
   font-family: inherit;
   font-size: 18px;
-  box-sizing: border-box;  
+  box-sizing: border-box;
   display: block;
- 
+
 
  /* padding: 0.778em; /*14px @ 18px */
   width: 100%;
-  
+
 }
 
 
@@ -435,10 +447,91 @@ textarea {
    background-color: grey;
  }
 
+ .has-toolbar .responsiveCal{
+   display: none;
+ }
+
 /* -------------------------------------------------------- end map styles ----------------------------------------------- */
+/* 374 */
+@media screen and (min-width: 23.375em) {
+  #info,
+  #schedule,
+  #expectationspage
+  #beliefspage,
+  #contact{
+    width: 80%;
+    text-align: center;
+  }
+
+  #contact{
+    margin-left: 9%;
+  }
+}
+
+/* 624 */
+@media screen and (min-width: 39em) {
+  h1{
+    font-size: 2.027em;
+  }
+
+  h2{
+    font-size: 1.602em;
+  }
+  #info,
+  #schedule,
+  #expectationspage
+  #beliefspage,
+  #contact{
+    margin-left: 10.5%;
+    width: 75%;
+    text-align: center;
+  }
+
+  #schedule{
+    margin-left: 13.5%;
+    width: 75%;
+    text-align: center;
+
+  }
+}
+
+/* 776 */
+@media screen and (min-width: 48.5em) {
+  h1{
+    font-size: 2.281em;
+  }
+
+  h2{
+    font-size: 1.602em;
+  }
+
+  #mainimage,
+  #beliefsimage{
+    width: 75%;
+    margin-left: 13%;
+  }
+}
 
 @media screen and (min-width: 54.125em) {
-  
+
+  h1{
+    font-size: 2.566em;
+    line-height: 1.27em;
+    text-align: center;
+    padding-bottom: 0.75em;
+    padding-top: 0.75em;
+  }
+
+
+  #info,
+  #schedule,
+  #expectationspage
+  #beliefspage,
+  #contact,
+  #expectationspage{
+    margin-left: 12.5%;
+  }
+
   #navigation{
     display: block;
     text-align: center;
@@ -448,13 +541,13 @@ textarea {
     text-align: center;
 
   }
-  
+
   .navigation li,
   .navigation li:last-child {
     border: 0;
     display: inline;
   }
-  
+
     .hasjs #navigation {
     margin-left: 0;
     width: 100%;
@@ -464,37 +557,61 @@ textarea {
     height: 4.9em;
     display: block;
   }
-  
+
   li:hover ul {
     display: block;
 }
   ul ul{
     font-size: 0.746em;
   }
-  
-/* nav a:hover { 
-  background: #0000ff	; 
-  color: red; 
-}
-
-*/
 
 
 #visit1:hover{
-   background: yellow	; 
-   color: red; 
+   background: yellow	;
+   color: red;
 }
 
-  
+
 #visit1:hover #visitlinks{
     display: block;
     position: static;
-    color: red;
-  }
-  
-  .menu-icon,
-  #menuToggle  {
-    display: none; 
   }
 
+  .menu-icon,
+  #menuToggle  {
+    display: none;
+  }
+
+}
+ /* 980 */
+@media screen and (min-width: 61.25em) {
+  #beliefsimage{
+    width: 100%;
+    margin-left: 19%;
+  }
+}
+
+
+@media screen and (min-width: 76.125em) {
+  h1{
+    font-size: 2.887em;
+  }
+
+  h2{
+    font-size: 2.281em;
+  }
+
+  #mainimage{
+    width: 80%;
+    margin-left: 17%;
+  }
+
+  #beliefsimage{
+    margin-left: 26%;
+  }
+
+  #beliefspage,
+  #expectationspage{
+    margin-left: 12%;
+  }
 }
